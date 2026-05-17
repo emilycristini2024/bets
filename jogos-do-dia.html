@@ -270,6 +270,92 @@
     }
     .cta-final h3 { font-size: 1.3rem; color: var(--branco); margin-bottom: 10px; }
     .cta-final p { color: #aaa; font-size: 0.92rem; margin-bottom: 22px; }
+    .cta-final .sub-btn { display: block; margin-top: 10px; font-size: 0.78rem; color: #555; }
+
+    /* ── TIMELINE ── */
+    .timeline { margin-bottom: 32px; }
+    .tl-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--cinza);
+    }
+    .tl-item:last-child { border-bottom: none; }
+    .tl-hora {
+      background: var(--verde);
+      color: #000;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 6px 10px;
+      border-radius: 8px;
+      text-align: center;
+      min-width: 70px;
+      flex-shrink: 0;
+      line-height: 1.3;
+    }
+    .tl-hora span { display: block; font-size: 0.7rem; font-weight: 400; }
+    .tl-conteudo strong { display: block; color: var(--branco); margin-bottom: 2px; }
+    .tl-conteudo span { font-size: 0.85rem; color: #aaa; }
+
+    /* ── CARD EXEMPLO TELEGRAM ── */
+    .exemplo-telegram {
+      background: #17212b;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 28px;
+      border: 1px solid #2b5278;
+      max-width: 480px;
+    }
+    .tg-header {
+      background: #2b5278;
+      padding: 10px 16px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .tg-header svg { width: 18px; height: 18px; fill: #fff; }
+    .tg-body {
+      padding: 16px 18px;
+      font-size: 0.88rem;
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+    .tg-body p { margin-bottom: 2px; }
+    .tg-alerta { color: #ffd600; font-weight: 700; font-size: 0.95rem; }
+    .tg-responsavel { color: #ff8a80; font-size: 0.82rem; }
+    .verde { color: #00c853; font-weight: 600; }
+    .odd { color: #ffd600; font-weight: 700; }
+    .conf { font-weight: 700; }
+    .conf.alto { color: #00c853; }
+    .conf.medio { color: #ffb300; }
+    .mercado {
+      background: #1e2d3d;
+      border-radius: 6px;
+      padding: 6px 10px;
+      margin: 4px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+    }
+    .num-mercado {
+      background: var(--telegram);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.75rem;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
 
     /* ── FOOTER ── */
     footer {
@@ -320,28 +406,60 @@
   <!-- CONTEÚDO -->
   <div class="container">
 
-    <!-- Como funciona -->
-    <h2>📋 Como receber os palpites</h2>
-    <div class="passos">
-      <div class="passo-card">
-        <div class="num">1</div>
-        <strong>Entre no canal</strong>
-        <span>Clique no botão acima e entre no BetChat no Telegram</span>
+    <!-- Como funciona — timeline -->
+    <h2>📋 Como funciona o canal</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-hora">07:00 <span>BRT</span></div>
+        <div class="tl-conteudo">
+          <strong>Relatório matinal</strong>
+          <span>10 jogos do dia com análise prévia postados no canal</span>
+        </div>
       </div>
-      <div class="passo-card">
-        <div class="num">2</div>
-        <strong>Receba todo dia</strong>
-        <span>Todo dia de manhã os palpites do dia são postados automaticamente</span>
+      <div class="tl-item">
+        <div class="tl-hora">-30min <span>do jogo</span></div>
+        <div class="tl-conteudo">
+          <strong>Análise detalhada automática</strong>
+          <span>Forma recente, confronto direto, desfalques e mercados recomendados</span>
+        </div>
       </div>
-      <div class="passo-card">
-        <div class="num">3</div>
-        <strong>Analise e aposte</strong>
-        <span>Leia a análise, escolha sua aposta e use seu link de afiliado</span>
+      <div class="tl-item">
+        <div class="tl-hora">🎯</div>
+        <div class="tl-conteudo">
+          <strong>Mercados com odds e confiança</strong>
+          <span>Over/Under, Ambas Marcam, resultado — cada um com nota de 1 a 10</span>
+        </div>
       </div>
-      <div class="passo-card">
-        <div class="num">4</div>
-        <strong>Acompanhe ao vivo</strong>
-        <span>Resultados e atualizações também no canal</span>
+    </div>
+
+    <hr class="divisor" />
+
+    <!-- Exemplo real de análise -->
+    <h2>📱 Exemplo de análise no canal</h2>
+    <div class="exemplo-telegram">
+      <div class="tg-header">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.17 13.667l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.978.892z"/></svg>
+        BetChat — Análise automática
+      </div>
+      <div class="tg-body">
+        <p class="tg-alerta">⏰ JOGO EM 30 MINUTOS!</p>
+        <p><strong>⚽ Atalanta x Bologna</strong></p>
+        <p>🏆 Serie A &nbsp;|&nbsp; 🕐 13:00 BRT</p>
+        <br>
+        <p><strong>📊 ANÁLISE:</strong></p>
+        <p>• Forma recente: Atalanta <span class="verde">4V 1E</span> nos últimos 5</p>
+        <p>• Confronto direto: Atalanta venceu 3 dos últimos 5</p>
+        <p>• Fator casa: Atalanta marca <span class="verde">2.1 gols</span> em casa</p>
+        <p>• Desfalques: sem informações relevantes</p>
+        <br>
+        <p><strong>🎯 MERCADOS RECOMENDADOS:</strong></p>
+        <div class="mercado"><span class="num-mercado">1</span> Over 2.5 Gols — Odd <span class="odd">~1.80</span> | Confiança: <span class="conf alto">8/10</span></div>
+        <div class="mercado"><span class="num-mercado">2</span> Ambas Marcam — Odd <span class="odd">~1.70</span> | Confiança: <span class="conf medio">7/10</span></div>
+        <div class="mercado"><span class="num-mercado">3</span> Atalanta Vence — Odd <span class="odd">~1.60</span> | Confiança: <span class="conf medio">7/10</span></div>
+        <br>
+        <p>💡 <em>Atalanta ofensivo em casa contra Bologna equilibrado</em></p>
+        <br>
+        <p class="tg-responsavel">⚠️ Aposte com responsabilidade.</p>
       </div>
     </div>
 
@@ -356,43 +474,17 @@
       </div>
     </div>
 
-    <hr class="divisor" />
-
-    <!-- O que você recebe -->
-    <h2>✅ O que você recebe no canal</h2>
-    <div class="passos">
-      <div class="passo-card">
-        <div class="num">⚽</div>
-        <strong>Jogos do dia</strong>
-        <span>Principais partidas do Brasileirão, Champions, Premier League e mais</span>
-      </div>
-      <div class="passo-card">
-        <div class="num">📊</div>
-        <strong>Análise completa</strong>
-        <span>Forma recente, confronto direto, desfalques e probabilidades</span>
-      </div>
-      <div class="passo-card">
-        <div class="num">🎯</div>
-        <strong>Palpite direto</strong>
-        <span>Resultado, over/under, ambas marcam e mercados especiais</span>
-      </div>
-      <div class="passo-card">
-        <div class="num">🏆</div>
-        <strong>Odds sugeridas</strong>
-        <span>Indicação de onde encontrar as melhores odds para cada jogo</span>
-      </div>
-    </div>
-
     <!-- CTA final -->
     <div class="cta-final">
-      <h3>📲 Não perca os palpites de amanhã</h3>
-      <p>Entre agora no canal e receba análises gratuitas todo dia de manhã direto no seu Telegram.</p>
+      <h3>📲 Receba as análises de amanhã às 7h</h3>
+      <p>Entre agora no canal e receba análises automáticas gratuitas todo dia direto no seu Telegram.</p>
       <a href="https://t.me/+U8svPsulqtEzOTU5" target="_blank" rel="noopener" class="btn-telegram">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.17 13.667l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.978.892z"/>
         </svg>
         📊 Entrar no Canal BetChat
       </a>
+      <span class="sub-btn">Gratuito · Análises automáticas todo dia às 7h</span>
     </div>
 
   </div>
