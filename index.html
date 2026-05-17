@@ -4,42 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO Title — palavra-chave principal no início -->
-  <title>Melhores Casas de Apostas do Brasil 2025 | Bônus e Análises</title>
+  <title>BetdoCassino — Melhores Casas de Cassino do Brasil 2025</title>
+  <meta name="description" content="Compare as melhores casas de cassino do Brasil em 2025. Análises completas, bônus de boas-vindas e dicas para jogar com segurança." />
+  <meta name="keywords" content="casas de cassino, melhores cassinos brasil, cassino online, bet bonus, apostas esportivas, palpites hoje" />
+  <link rel="canonical" href="https://emilycristini2024.github.io/bets/" />
 
-  <!-- Meta Description — aparece no Google, influencia o clique -->
-  <meta name="description" content="Compare as melhores casas de apostas do Brasil em 2025. Análises completas, bônus de boas-vindas, odds e dicas para apostar com segurança." />
-
-  <!-- Palavras-chave (menos relevante hoje, mas não custa) -->
-  <meta name="keywords" content="casas de apostas, melhores apostas brasil, bet bonus, apostas esportivas, futebol apostas, palpites hoje" />
-
-  <!-- Canonical — evita conteúdo duplicado -->
-  <link rel="canonical" href="https://SEU-DOMINIO.com/" />
-
-  <!-- Open Graph — aparência no WhatsApp, Facebook, etc. -->
-  <meta property="og:title" content="Melhores Casas de Apostas do Brasil 2025" />
-  <meta property="og:description" content="Análises completas das melhores bets do Brasil. Bônus, odds e dicas." />
+  <meta property="og:title" content="BetdoCassino — Melhores Casas de Cassino do Brasil 2025" />
+  <meta property="og:description" content="Análises completas das melhores casas de cassino do Brasil. Bônus, odds e dicas." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://SEU-DOMINIO.com/" />
-  <meta property="og:image" content="https://SEU-DOMINIO.com/img/og-image.jpg" />
+  <meta property="og:url" content="https://emilycristini2024.github.io/bets/" />
 
-  <!-- Schema.org — dados estruturados para o Google -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Melhores Casas de Apostas Brasil",
-    "url": "https://SEU-DOMINIO.com",
-    "description": "Análises e comparações das melhores casas de apostas do Brasil",
+    "name": "BetdoCassino",
+    "url": "https://emilycristini2024.github.io/bets/",
+    "description": "Análises e comparações das melhores casas de cassino do Brasil",
     "inLanguage": "pt-BR"
   }
   </script>
 
-  <!-- Google AdSense — substitua ca-pub-XXXXXXXXXXXXXXXX pelo seu ID -->
+  <!-- Google AdSense -->
   <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
 
   <style>
-    /* Reset e base */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
@@ -51,6 +40,7 @@
       --branco: #f5f5f5;
       --texto: #e0e0e0;
       --destaque: #ffd600;
+      --roxo: #7c3aed;
     }
 
     body {
@@ -63,11 +53,11 @@
     a { color: var(--verde); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* Header */
+    /* ── HEADER ── */
     header {
       background: var(--cinza-escuro);
       border-bottom: 3px solid var(--verde);
-      padding: 16px 20px;
+      padding: 14px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -75,29 +65,65 @@
       gap: 10px;
     }
 
-    header .logo {
+    .logo {
       font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--verde);
-      letter-spacing: 1px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-decoration: none;
     }
-
-    header .logo span { color: var(--branco); }
+    .logo .bet { color: var(--verde); }
+    .logo .do  { color: #aaa; font-weight: 400; font-size: 1.1rem; }
+    .logo .cassino { color: var(--branco); }
 
     nav a {
-      margin-left: 20px;
-      font-size: 0.95rem;
+      margin-left: 18px;
+      font-size: 0.92rem;
       color: var(--texto);
       font-weight: 500;
+      text-decoration: none;
+    }
+    nav a:hover { color: var(--verde); }
+    nav a.ativo { color: var(--verde); border-bottom: 2px solid var(--verde); padding-bottom: 2px; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #0d0d1a, #1a1a2e, #0d1a0d);
+      text-align: center;
+      padding: 60px 20px 44px;
+      position: relative;
+      overflow: hidden;
     }
 
-    nav a:hover { color: var(--verde); text-decoration: none; }
+    .hero::before {
+      content: '🎰';
+      position: absolute;
+      font-size: 12rem;
+      opacity: 0.04;
+      top: -20px;
+      left: -30px;
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '🃏';
+      position: absolute;
+      font-size: 10rem;
+      opacity: 0.04;
+      bottom: -10px;
+      right: -20px;
+      pointer-events: none;
+    }
 
-    /* Hero */
-    .hero {
-      background: linear-gradient(135deg, var(--cinza-escuro), var(--cinza));
-      text-align: center;
-      padding: 60px 20px 40px;
+    .badge {
+      display: inline-block;
+      background: var(--destaque);
+      color: #000;
+      font-weight: 700;
+      font-size: 0.78rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .hero h1 {
@@ -106,37 +132,49 @@
       margin-bottom: 14px;
       line-height: 1.3;
     }
-
     .hero h1 span { color: var(--verde); }
 
     .hero p {
       font-size: 1.05rem;
-      color: var(--texto);
-      max-width: 600px;
-      margin: 0 auto 24px;
+      color: #aaa;
+      max-width: 580px;
+      margin: 0 auto 28px;
     }
 
-    .badge {
-      display: inline-block;
+    .hero-btns {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-hero-primary {
       background: var(--verde);
       color: #000;
       font-weight: 700;
-      font-size: 0.8rem;
-      padding: 4px 10px;
-      border-radius: 20px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      padding: 13px 26px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: background 0.2s;
     }
+    .btn-hero-primary:hover { background: var(--verde-escuro); color: #fff; text-decoration: none; }
 
-    /* Container */
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 16px;
+    .btn-hero-secondary {
+      background: transparent;
+      color: var(--verde);
+      font-weight: 700;
+      padding: 13px 26px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      border: 2px solid var(--verde);
+      text-decoration: none;
+      transition: background 0.2s;
     }
+    .btn-hero-secondary:hover { background: var(--verde); color: #000; text-decoration: none; }
 
-    /* Seção */
+    /* ── CONTAINER ── */
+    .container { max-width: 960px; margin: 0 auto; padding: 0 16px; }
     section { padding: 40px 0; }
 
     .section-title {
@@ -147,7 +185,7 @@
       border-bottom: 2px solid var(--verde);
     }
 
-    /* Cards de casas de apostas */
+    /* ── CARDS ── */
     .bet-card {
       background: var(--cinza-escuro);
       border: 1px solid var(--cinza);
@@ -155,13 +193,12 @@
       padding: 20px;
       margin-bottom: 20px;
       display: grid;
-      grid-template-columns: 80px 1fr auto;
+      grid-template-columns: 70px 1fr auto;
       gap: 16px;
       align-items: center;
-      transition: border-color 0.2s;
+      transition: border-color 0.2s, transform 0.15s;
     }
-
-    .bet-card:hover { border-color: var(--verde); }
+    .bet-card:hover { border-color: var(--verde); transform: translateY(-2px); }
 
     .bet-card .rank {
       font-size: 2rem;
@@ -170,40 +207,12 @@
       text-align: center;
     }
 
-    .bet-card .info h2 {
-      font-size: 1.15rem;
-      color: var(--branco);
-      margin-bottom: 4px;
-    }
+    .bet-card .info h2 { font-size: 1.15rem; color: var(--branco); margin-bottom: 4px; }
+    .bet-card .info .bonus { color: var(--destaque); font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; }
+    .bet-card .info p { font-size: 0.88rem; color: #aaa; line-height: 1.5; }
 
-    .bet-card .info .bonus {
-      color: var(--destaque);
-      font-weight: 700;
-      font-size: 0.95rem;
-      margin-bottom: 6px;
-    }
-
-    .bet-card .info p {
-      font-size: 0.88rem;
-      color: #aaa;
-      line-height: 1.5;
-    }
-
-    .bet-card .info .tags {
-      margin-top: 8px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-
-    .tag {
-      background: var(--cinza);
-      color: var(--verde);
-      font-size: 0.75rem;
-      padding: 2px 8px;
-      border-radius: 10px;
-      font-weight: 600;
-    }
+    .bet-card .info .tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { background: var(--cinza); color: var(--verde); font-size: 0.75rem; padding: 2px 8px; border-radius: 10px; font-weight: 600; }
 
     .btn-cta {
       display: inline-block;
@@ -217,17 +226,13 @@
       white-space: nowrap;
       transition: background 0.2s;
       min-width: 130px;
-    }
-
-    .btn-cta:hover {
-      background: var(--verde-escuro);
-      color: #fff;
       text-decoration: none;
     }
+    .btn-cta:hover { background: var(--verde-escuro); color: #fff; text-decoration: none; }
 
-    /* Aviso de jogo responsável */
+    /* ── AVISO ── */
     .aviso {
-      background: #1a1a1a;
+      background: #1a0000;
       border-left: 4px solid #ff5252;
       padding: 14px 18px;
       border-radius: 6px;
@@ -235,10 +240,9 @@
       color: #aaa;
       margin: 30px 0;
     }
-
     .aviso strong { color: #ff5252; }
 
-    /* Bloco AdSense */
+    /* ── AD BLOCK ── */
     .ad-block {
       background: var(--cinza);
       border-radius: 8px;
@@ -253,14 +257,8 @@
       font-size: 0.8rem;
     }
 
-    /* FAQ — bom para SEO */
-    .faq-item {
-      background: var(--cinza-escuro);
-      border-radius: 8px;
-      margin-bottom: 12px;
-      overflow: hidden;
-    }
-
+    /* ── FAQ ── */
+    .faq-item { background: var(--cinza-escuro); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
     .faq-item summary {
       padding: 16px 20px;
       cursor: pointer;
@@ -271,17 +269,11 @@
       justify-content: space-between;
       align-items: center;
     }
-
     .faq-item summary::after { content: '+'; color: var(--verde); font-size: 1.3rem; }
     .faq-item[open] summary::after { content: '−'; }
+    .faq-item p { padding: 0 20px 16px; font-size: 0.9rem; color: #aaa; }
 
-    .faq-item p {
-      padding: 0 20px 16px;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    /* Footer */
+    /* ── FOOTER ── */
     footer {
       background: var(--cinza-escuro);
       border-top: 2px solid var(--cinza);
@@ -290,21 +282,14 @@
       font-size: 0.82rem;
       color: #666;
     }
-
     footer a { color: #888; }
     footer .footer-links { margin-bottom: 12px; }
     footer .footer-links a { margin: 0 10px; }
 
-    /* Responsivo */
+    /* ── RESPONSIVO ── */
     @media (max-width: 600px) {
-      .bet-card {
-        grid-template-columns: 40px 1fr;
-        grid-template-rows: auto auto;
-      }
-      .bet-card .btn-cta {
-        grid-column: 1 / -1;
-        width: 100%;
-      }
+      .bet-card { grid-template-columns: 40px 1fr; grid-template-rows: auto auto; }
+      .bet-card .btn-cta { grid-column: 1 / -1; width: 100%; }
       .bet-card .rank { font-size: 1.4rem; }
     }
   </style>
@@ -314,9 +299,11 @@
 
   <!-- HEADER -->
   <header>
-    <div class="logo">Bet<span>Analise</span>.com</div>
+    <a href="index.html" class="logo">
+      <span class="bet">Bet</span><span class="do">do</span><span class="cassino">Cassino</span>
+    </a>
     <nav>
-      <a href="#ranking">Ranking</a>
+      <a href="casas-de-cassino.html">Casas de Cassino</a>
       <a href="jogos-do-dia.html">Jogos do Dia</a>
       <a href="#faq">FAQ</a>
       <a href="contato.html">Contato</a>
@@ -325,24 +312,25 @@
 
   <!-- HERO -->
   <div class="hero">
-    <div class="badge">⚽ Atualizado em 2025</div>
-    <h1>As <span>Melhores Casas de Apostas</span><br>do Brasil em 2025</h1>
-    <p>Análises completas, bônus comparados e dicas para você apostar com segurança. Novo review toda semana.</p>
+    <div class="badge">🎰 Atualizado em 2025</div>
+    <h1>As <span>Melhores Casas de Cassino</span><br>do Brasil em 2025</h1>
+    <p>Análises completas, bônus comparados e dicas para você jogar com segurança. Novo review toda semana.</p>
+    <div class="hero-btns">
+      <a href="casas-de-cassino.html" class="btn-hero-primary">🎰 Ver Casas de Cassino</a>
+      <a href="jogos-do-dia.html" class="btn-hero-secondary">⚽ Jogos do Dia</a>
+    </div>
   </div>
 
   <!-- CONTEÚDO PRINCIPAL -->
   <div class="container">
 
-    <!-- Bloco de anúncio AdSense (topo) -->
     <div class="ad-block">
-      <!-- AdSense: cole aqui o código do seu anúncio -->
-      <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXX" data-ad-slot="XXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
       [Espaço para anúncio]
     </div>
 
-    <!-- RANKING -->
-    <section id="ranking">
-      <h2 class="section-title">🏆 Ranking — Melhores Bets de 2025</h2>
+    <!-- CASAS DE CASSINO -->
+    <section id="cassinos">
+      <h2 class="section-title">🎰 Casas de Cassino — Melhores de 2025</h2>
 
       <!-- CASA 1 — 0055Bet -->
       <article class="bet-card" itemscope itemtype="https://schema.org/Product">
@@ -357,9 +345,7 @@
             <span class="tag">⚡ Pagamento Diário</span>
           </div>
         </div>
-        <a href="0055bet.html" rel="noopener" class="btn-cta">
-          Ver Oferta →
-        </a>
+        <a href="0055bet.html" rel="noopener" class="btn-cta">Ver Oferta →</a>
       </article>
 
       <!-- CASA 2 — 256Bet -->
@@ -375,45 +361,20 @@
             <span class="tag">⚡ Pagamento Diário</span>
           </div>
         </div>
-        <a href="256bet.html" rel="noopener" class="btn-cta">
-          Ver Oferta →
-        </a>
+        <a href="256bet.html" rel="noopener" class="btn-cta">Ver Oferta →</a>
       </article>
-
-      <!-- CASA 3 -->
-      <article class="bet-card" itemscope itemtype="https://schema.org/Product">
-        <div class="rank">#3</div>
-        <div class="info">
-          <h2 itemprop="name">Sportingbet</h2>
-          <div class="bonus">🎁 Bônus: 100% até R$300</div>
-          <p itemprop="description">Tradicional no mercado brasileiro. Fácil de usar, bom suporte em português e promoções frequentes para clientes fiéis.</p>
-          <div class="tags">
-            <span class="tag">⚡ Pix</span>
-            <span class="tag">🇧🇷 BR</span>
-            <span class="tag">🎯 Promoções</span>
-          </div>
-        </div>
-        <a href="SEU-LINK-AFILIADO-SPORTINGBET" target="_blank" rel="noopener sponsored" class="btn-cta">
-          Abrir Conta →
-        </a>
-      </article>
-
-      <!-- Adicione mais cards aqui seguindo o mesmo padrão -->
 
     </section>
 
-    <!-- Aviso de jogo responsável — importante para aprovação AdSense -->
     <div class="aviso" role="note">
       <strong>⚠️ Jogo Responsável:</strong> Apostar envolve risco financeiro. Jogue com responsabilidade e apenas com o que pode perder. Proibido para menores de 18 anos. Se precisar de ajuda: <a href="https://www.jogadoresanonimos.com.br" target="_blank" rel="noopener">Jogadores Anônimos</a>.
     </div>
 
-    <!-- Bloco de anúncio AdSense (meio) -->
     <div class="ad-block">
-      <!-- AdSense: cole aqui o código do seu anúncio -->
       [Espaço para anúncio]
     </div>
 
-    <!-- FAQ — muito bom para SEO, aparece no Google como rich snippet -->
+    <!-- FAQ -->
     <section id="faq">
       <h2 class="section-title">❓ Perguntas Frequentes</h2>
 
@@ -424,26 +385,26 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Qual a melhor casa de apostas do Brasil em 2025?",
+            "name": "Qual a melhor casa de cassino do Brasil em 2025?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A Betano é considerada a melhor casa de apostas do Brasil em 2025, com odds competitivas, saque via Pix e bônus de até R$500 para novos usuários."
+              "text": "A 0055Bet lidera nosso ranking em 2025, com bônus de R$100 no primeiro depósito e comissão vitalícia de até 5% para quem convida amigos."
             }
           },
           {
             "@type": "Question",
-            "name": "As apostas esportivas são legais no Brasil?",
+            "name": "Os cassinos online são legais no Brasil?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sim. Desde janeiro de 2025, as apostas esportivas são regulamentadas no Brasil pelo Ministério da Fazenda. Apenas casas licenciadas podem operar legalmente."
+              "text": "Sim. Desde janeiro de 2025, os jogos online são regulamentados no Brasil pelo Ministério da Fazenda. Apenas casas licenciadas podem operar legalmente."
             }
           },
           {
             "@type": "Question",
-            "name": "Como sacar meu dinheiro das apostas?",
+            "name": "Como sacar meu dinheiro do cassino?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A maioria das casas aceita saque via Pix, que cai em minutos. Algumas também oferecem transferência bancária. O tempo varia de minutos a 3 dias úteis."
+              "text": "A maioria das casas aceita saque via Pix, que cai em minutos. O tempo varia de minutos a 3 dias úteis dependendo da casa."
             }
           }
         ]
@@ -451,44 +412,44 @@
       </script>
 
       <details class="faq-item">
-        <summary>Qual a melhor casa de apostas do Brasil em 2025?</summary>
-        <p>A Betano lidera nosso ranking em 2025 pela combinação de odds competitivas, saque rápido via Pix e bônus generoso para novos usuários. A Bet365 é forte opção para quem quer transmissão ao vivo.</p>
+        <summary>Qual a melhor casa de cassino do Brasil em 2025?</summary>
+        <p>A 0055Bet lidera nosso ranking em 2025, com bônus de R$100 no primeiro depósito e comissão vitalícia de até 5% para quem convida amigos.</p>
       </details>
 
       <details class="faq-item">
-        <summary>As apostas esportivas são legais no Brasil?</summary>
-        <p>Sim. Desde janeiro de 2025, as apostas esportivas são regulamentadas pelo Ministério da Fazenda. Apenas casas com licença oficial podem operar. Todas as indicadas neste site são licenciadas.</p>
+        <summary>Os cassinos online são legais no Brasil?</summary>
+        <p>Sim. Desde janeiro de 2025, os jogos online são regulamentados pelo Ministério da Fazenda. Apenas casas com licença oficial podem operar. Todas as indicadas neste site são licenciadas.</p>
       </details>
 
       <details class="faq-item">
-        <summary>Como sacar meu dinheiro das apostas?</summary>
+        <summary>Como sacar meu dinheiro do cassino?</summary>
         <p>A maioria das casas aceita saque via Pix, que cai em minutos. Algumas também oferecem transferência bancária. O tempo varia de minutos a 3 dias úteis dependendo da casa.</p>
       </details>
 
       <details class="faq-item">
-        <summary>Preciso pagar imposto sobre ganhos em apostas?</summary>
-        <p>Sim. Desde 2025, ganhos acima de R$2.824 por mês em apostas são tributados em 15% pelo Imposto de Renda. Valores abaixo disso são isentos.</p>
+        <summary>Preciso pagar imposto sobre ganhos em cassinos?</summary>
+        <p>Sim. Desde 2025, ganhos acima de R$2.824 por mês são tributados em 15% pelo Imposto de Renda. Valores abaixo disso são isentos.</p>
       </details>
 
       <details class="faq-item">
         <summary>O que é bônus de boas-vindas?</summary>
-        <p>É um benefício oferecido pelas casas para novos usuários, geralmente um percentual sobre o primeiro depósito. Exemplo: deposite R$100 e ganhe mais R$100 em créditos de aposta.</p>
+        <p>É um benefício oferecido pelas casas para novos usuários, geralmente um percentual sobre o primeiro depósito. Exemplo: deposite R$100 e ganhe mais R$100 em créditos.</p>
       </details>
 
     </section>
 
-  </div><!-- /container -->
+  </div>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-links">
+      <a href="casas-de-cassino.html">Casas de Cassino</a>
+      <a href="jogos-do-dia.html">Jogos do Dia</a>
       <a href="politica-privacidade.html">Política de Privacidade</a>
-      <a href="termos-uso.html">Termos de Uso</a>
       <a href="jogo-responsavel.html">Jogo Responsável</a>
       <a href="contato.html">Contato</a>
-      <a href="sobre.html">Sobre</a>
     </div>
-    <p>© 2025 BetAnalise. Conteúdo informativo. Não nos responsabilizamos por perdas em apostas.</p>
+    <p>© 2025 BetdoCassino. Conteúdo informativo. Não nos responsabilizamos por perdas em apostas.</p>
     <p style="margin-top:6px;">Este site contém links de afiliados. Podemos receber comissão por cadastros realizados.</p>
   </footer>
 
